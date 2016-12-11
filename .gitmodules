@@ -1,0 +1,3 @@
+[submodule "OwlCarousel2"]
+	path = OwlCarousel2
+	url = git@github.com:OwlCarousel2/OwlCarousel2.git
