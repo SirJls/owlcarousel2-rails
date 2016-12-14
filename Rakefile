@@ -4,6 +4,7 @@ require 'bundler/gem_tasks'
 
 desc 'Upgrade to the latest version of owlcarousel2'
 task :upgrade do
+  system '(cd OwlCarousel2 && git fetch --all && git reset --hard origin/develop)'
   system 'git submodule update'
   system 'cp OwlCarousel2/src/scss/* vendor/assets/stylesheets/owlcarousel2/'
   system 'cp OwlCarousel2/src/js/* vendor/assets/javascripts/owlcarousel2/'
